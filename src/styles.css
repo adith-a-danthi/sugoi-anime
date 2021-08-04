@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #0a0f0d;
+  --secondary-color: #c4cbca;
+}
+
+.App {
+  font-family: sans-serif;
+  width: 75vw;
+  margin: auto;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  margin: 1rem 0.3rem;
+}
+
+button:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+
+.card-list {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card {
+  padding: 1rem;
+  width: 150px;
+  background-color: #232323;
+  border: 1px solid #232323;
+  margin: 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
