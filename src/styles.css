@@ -34,13 +34,33 @@ button:hover {
   text-align: left;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .card {
   padding: 1rem;
-  width: 150px;
   background-color: #232323;
   border: 1px solid #232323;
   margin: 1rem 0.5rem;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-content {
+  margin: 0 0.5em;
+  padding: 0;
+}
+
+.card-title {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

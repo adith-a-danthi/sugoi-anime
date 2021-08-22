@@ -31,11 +31,11 @@ export default function App() {
               width="150px"
               height="210px"
             />
-            <div style={{ fontSize: "larger", marginTop: "0.5em" }}>
-              {" "}
-              {anime.title}{" "}
+            <div className="card-content">
+              <h2 className="card-title">{anime.title}</h2>
+              <div style={{ fontSize: "smaller" }}> {anime.score} </div>
+              <p>{anime.description}</p>
             </div>
-            <div style={{ fontSize: "smaller" }}> {anime.score} </div>
           </div>
         ))}
       </div>
